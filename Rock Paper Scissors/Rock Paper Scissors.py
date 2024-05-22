@@ -5,13 +5,7 @@ import random, time
 UserScore=0
 ComputerScore=0
 Font="Courier New"
-BlankImage=tk.PhotoImage(file="Rock Paper Scissors/Blank Image.png")
-RockImage=tk.PhotoImage(file="Rock Paper Scissors/Rock.png")
-PaperImage=tk.PhotoImage(file="Rock Paper Scissors/Paper.png")
-ScissorsImage=tk.PhotoImage(file="Rock Paper Scissors/Scissors.png")
-Rock2Image=tk.PhotoImage(file="Rock Paper Scissors/Rock2.png")
-Paper2Image=tk.PhotoImage(file="Rock Paper Scissors/Paper2.png")
-Scissors2Image=tk.PhotoImage(file="Rock Paper Scissors/Scissors2.png")
+
 
 def SetUserChoice(option):
     global ComputerChoice
@@ -81,6 +75,14 @@ def CalulateResult(user, computer):
 Window=tk.Tk()
 Window.geometry("500x200")
 Window.title("Rock Paper Scissors")
+
+BlankImage=tk.PhotoImage(file="Rock Paper Scissors/Blank Image.png")
+RockImage=tk.PhotoImage(file="Rock Paper Scissors/Rock.png")
+PaperImage=tk.PhotoImage(file="Rock Paper Scissors/Paper.png")
+ScissorsImage=tk.PhotoImage(file="Rock Paper Scissors/Scissors.png")
+Rock2Image=tk.PhotoImage(file="Rock Paper Scissors/Rock2.png")
+Paper2Image=tk.PhotoImage(file="Rock Paper Scissors/Paper2.png")
+Scissors2Image=tk.PhotoImage(file="Rock Paper Scissors/Scissors2.png")
 
 WelcomeLabel=tk.Label(Window, text="Rock, Paper, Scissors", font=(f"{Font}", 15, "bold"))
 WelcomeLabel.grid(row=1, column=2)
